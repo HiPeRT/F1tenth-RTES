@@ -15,14 +15,18 @@ $ git clone https://github.com/ros2/examples src/examples -b foxy
 
 # ROS2 and the F1/10
 
-## Keyboard for the simulator
+## F1/10 simulator and tools
 
-Official site [here](https://github.com/f1tenth/f1tenth_gym_ros#keyboard-teleop)
+Download the simulator vrtual machine [here](https://drive.google.com/drive/folders/1bKxncDvomwaQjNzUz6HRdBx-EhtF9Ov2?usp=sharing). It is based on Virtual Box.
 
-Comes with ROS2...
+## How to setup the sim machine
+- <i>Coming soon...</i>
+
+## useful tools
+
+[Here](https://github.com/f1tenth/f1tenth_gym_ros#keyboard-teleop) you can find a remote controller Node for the F1/10 simulated vehicle.
+It comes with ROS2, and you can run it with this
 ```
 $ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
-## How to setup the sim machine
-- <i>Coming soon...</i>
