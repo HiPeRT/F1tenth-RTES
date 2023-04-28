@@ -13,6 +13,10 @@ Fetch more official examples
 $ git clone https://github.com/ros2/examples src/examples -b foxy
 ```
 
+## Cheatsheet
+
+Eager to start programming? Check the file [here](./LAB_CHEAT_SHEET.md)
+
 # ROS2 and the F1/10
 
 ## F1/10 simulator and tools
@@ -25,27 +29,39 @@ Download the simulator virtual machine [here](https://drive.google.com/drive/fol
 
 First, run application (e.g., the remote controller), entering in its Workspace
 
-```$ cd /home/<YOUR WS>```
+```
+$ cd /home/<YOUR WS>
+```
 
-Initialize the environment
+Initialize the **local** environment
 
-```$ source install/setup.bash```
+```
+$ source install/setup.bash
+```
 
-Run
+Run a specific node from a specific package
 
-```$ ros2 run <PACKAGE> <NODE>``` 
+```
+$ ros2 run <PACKAGE> <NODE>
+``` 
 
 Then, to run the simulator (shall be done after), enter its Workspace:
 
-```$ cd /home/f1tenth_gym_ros```
+```
+$ cd /home/f1tenth_gym_ros
+```
 
 Initialize the environment
 
-```$ source install/setup.bash```
+```
+$ source install/setup.bash
+```
 
 Run
 
-```$ ros2 launch f1tenth_gym_ros gym_bridge_launch.py``` 
+```
+$ ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+``` 
 
 [RViz]() will run automatically as UI
 
