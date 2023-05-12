@@ -68,7 +68,9 @@ $ ros2 launch f1tenth_gym_ros gym_bridge_launch.py
 ### Software-in-the-Loop in a different environment
 (e.g., outside of sim)
 
-You justneed to make sure that the two OSses can "speak" to each other, e.g., they are in the same subnet. You can configure the Network settings of your VirtualBox instance to "bridged", and (recommended) you might want to set the IP address of your **guest** machine manually.
+You just need to make sure that the two OSses can "speak" to each other, e.g., they are in the same subnet. You can configure the Network settings of your VirtualBox instance to "bridged", and (recommended) you might want to set the IP address of your **guest** machine manually.
+
+![Network Map](./network_map.jpg "Network Map")
 
 ### Hardware-in-the-Loop
 
