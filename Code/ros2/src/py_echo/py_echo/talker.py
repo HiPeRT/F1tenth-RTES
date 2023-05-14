@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import String
+from time import sleep
 
 from rclpy.clock import Clock
 from datetime import datetime, timedelta
@@ -24,7 +25,7 @@ class Talker(Node):
     def sender_callback(self):
         self.timer.cancel()
         msg = String()
-        msg.data = 'a' * 2 ** self.i     # send multiple of 2 byte
+        msg.data = 'a' * 2 * self.i     # send multiple of 2 byte
         self.message = msg.data
 
         # Get timestamp with rclpy
@@ -53,12 +54,13 @@ class Talker(Node):
         print(f"[RCLPY] {len(self.message)} {now.nanoseconds - self.now.nanoseconds}")
         print(f"[UNIX] {len(self.message)} {(nowUnix - self.nowUnix) // timedelta(microseconds=1)}")
 
-        if self.i <= 20:    # 1Mbyte
+        if self.i <= 200:
             self.sender_callback()
         else:
             msg = String()
             msg.data = 'exit'
             self.publisher_.publish(msg)
+            sleep(1)    # Make sure the exit command is sent
             raise SystemExit
 
 

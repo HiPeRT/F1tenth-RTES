@@ -22,7 +22,7 @@ class Listener(Node):
         if (msg.data == 'exit'):
             raise SystemExit
 
-        #self.get_logger().info('I heard: "%s"' % msg.data)
+        self.get_logger().info(f"I heard: {len(msg.data)} Bytes")
         self.sender(msg)
 
     def sender(self, msg):

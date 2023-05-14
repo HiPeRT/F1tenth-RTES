@@ -12,8 +12,6 @@ pip install -r requirements.txt
 
 ## Usage 
 
-Move the **output** file of **echo** node into this directory and then run:
-
 ```bash
-python3 plotter.py
+python3 plotter.py filename1 [filename2]
 ```
