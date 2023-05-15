@@ -78,7 +78,7 @@ class Talker : public rclcpp::Node
         std::cout << "[RCLPY] " << msg->data.length() << " " << now - now_ << std::endl;
         std::cout << "[UNIX] " << msg->data.length() << " " << nowUnix.count() - nowUnix_.count() << std::endl;
         
-        if (count_ <= 200)
+        if (count_ <= 400)
             this->sender_callback();
         else
         {

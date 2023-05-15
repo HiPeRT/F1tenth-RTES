@@ -54,7 +54,7 @@ class Talker(Node):
         print(f"[RCLPY] {len(self.message)} {now.nanoseconds - self.now.nanoseconds}")
         print(f"[UNIX] {len(self.message)} {(nowUnix - self.nowUnix) // timedelta(microseconds=1)}")
 
-        if self.i <= 200:
+        if self.i <= 400:
             self.sender_callback()
         else:
             msg = String()
