@@ -17,11 +17,6 @@ from rclpy.node import Node
 
 from std_msgs.msg import String
 
-from rclpy.clock import Clock
-
-from datetime import datetime
-
-
 class MinimalPublisher(Node):
 
     def __init__(self):
@@ -37,12 +32,6 @@ class MinimalPublisher(Node):
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
         self.i += 1
-
-        now = Clock().now()
-        self.get_logger().info('Current time %i' % now.nanoseconds)
-
-        now = datetime.now()
-        self.get_logger().info('Current time %i' % now.time().microsecond)
 
 def main(args=None):
     rclpy.init(args=args)

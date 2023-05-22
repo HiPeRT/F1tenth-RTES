@@ -18,11 +18,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 
-#include "rclcpp/clock.hpp"
-
-#include <chrono>
-#include <ctime>
-
 using namespace std::chrono_literals;
 
 /* This example creates a subclass of Node and uses std::bind() to register a
@@ -46,14 +41,6 @@ private:
     message.data = "Hello, world! " + std::to_string(count_++);
     RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
     publisher_->publish(message);
-
-    rclcpp::Clock *clk = new rclcpp::Clock();
-    rclcpp::Time time = clk->now();
-    rcl_time_point_value_t ns = time.nanoseconds(); // Uint64_t in ref implementation
-    RCLCPP_INFO(this->get_logger(), "Time is: %lld", ns);
-
-    auto time2 = std::chrono::system_clock::now().time_since_epoch();
-    RCLCPP_INFO(this->get_logger(), "Time2 is: %lld", time2.count());
 
   }
   rclcpp::TimerBase::SharedPtr timer_;
