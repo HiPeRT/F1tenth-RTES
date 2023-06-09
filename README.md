@@ -6,7 +6,7 @@
 <p>
 This is official repository of the F1/10 module for the course of Real-Time embedded systems, Year 2022/23, at University of Modena and Reggio Emilia
 
-<a href="http://personale.unimore.it/rubrica/contenutiad/markober/2020/60021/N0/N0/9999" target="_blank">Course page</a> | <a href="Slides/00 - Collaborative tools.pdf" target="_blank">How to use Git to work with this repo</a> | <a href="https://drive.google.com/drive/folders/1bKxncDvomwaQjNzUz6HRdBx-EhtF9Ov2?usp=sharing" target="_blank">Lab material</a>
+<a href="http://personale.unimore.it/rubrica/contenutiad/markober/2020/60021/N0/N0/9999" target="_blank">Course page</a> | <a href="Slides/00 - Collaborative tools.pdf" target="_blank">How to use Git to work with this repo</a> | <a href="https://drive.google.com/drive/folders/1bKxncDvomwaQjNzUz6HRdBx-EhtF9Ov2?usp=sharing" target="_blank">Lab material on Google Drive (requires UNIMORE federated login)</a>
 
 </p>
 
